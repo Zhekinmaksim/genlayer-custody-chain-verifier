@@ -32,8 +32,10 @@ to prompt_comparative. Offline tests: 7/7 pass.
 
 - GitHub: https://github.com/Zhekinmaksim/genlayer-custody-chain-verifier
 - Commit: GitHub `main`; contract source must stay unchanged after deployment
-- Explorer contract and deploy transaction: pending Studio deployment
-- Source match: confirm Explorer source equals the deployment commit
+- Explorer contract: https://explorer-studio.genlayer.com/address/0xdaD45610eFf091571f6b6dd88723f2b293F1C634
+- Deploy transaction: `0x10643f5f6bd34db981d26e0498d4fa96b64de6717ce934c37e3e4c03c7f9a246`
+- Source match: Explorer code verified against `main` (nonblank source content
+  matches); Studio accepted the deployment in Normal (Full Consensus) mode
 - Offline verification: `python3 -m py_compile contract.py sim/check.py` and
   `python3 sim/check.py` pass, 7/7 cases
 - Live smoke: create a three-step chain; confirm wrong-address attest reverts;
