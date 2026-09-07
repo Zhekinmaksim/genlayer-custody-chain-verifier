@@ -9,7 +9,7 @@ Custody Chain Verifier
 
 ## Notes under 1000 chars
 
-\`\`\`text
+```text
 GenLayer IC for verifying an ordered chain of custody without asking validators
 to produce a checklist of subjective findings.
 
@@ -26,15 +26,14 @@ pending_step, not manufactured into a break.
 
 GenVM lint structure: exec_prompt is directly inside the inline callback passed
 to prompt_comparative. Offline tests: 7/7 pass.
-\`\`\`
+```
 
 ## Evidence checklist
 
 - GitHub repository: pending publication
 - Explorer contract and deploy transaction: pending Studio deployment
 - Source match: confirm Explorer source equals the deployment commit
-- Offline verification: \`python3 -m py_compile contract.py sim/check.py\` and
-  \`python3 sim/check.py\` pass, 7/7 cases
+- Offline verification: `python3 -m py_compile contract.py sim/check.py` and
+  `python3 sim/check.py` pass, 7/7 cases
 - Live smoke: create a three-step chain; confirm wrong-address attest reverts;
   attest sequentially from the three custodians; evaluate and record the result
-
