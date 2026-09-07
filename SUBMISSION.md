@@ -1,7 +1,7 @@
 # Portal submission - Custody Chain Verifier
 
-Use after the source is published to GitHub, the exact source is deployed in
-Studio, and the Explorer source is verified against the deployed commit.
+Use after the exact GitHub source is deployed in Studio and the Explorer source
+is verified against the deployed commit.
 
 ## Title
 
@@ -30,7 +30,8 @@ to prompt_comparative. Offline tests: 7/7 pass.
 
 ## Evidence checklist
 
-- GitHub repository: pending publication
+- GitHub: https://github.com/Zhekinmaksim/genlayer-custody-chain-verifier
+- Commit: GitHub `main`; contract source must stay unchanged after deployment
 - Explorer contract and deploy transaction: pending Studio deployment
 - Source match: confirm Explorer source equals the deployment commit
 - Offline verification: `python3 -m py_compile contract.py sim/check.py` and
